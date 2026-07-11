@@ -140,3 +140,22 @@ print(len(name))
 
 name = "Alice"
 print(len(name))
+
+
+has_permission = True
+if has_permission:
+    print("User has permission.")
+else:
+    print("User does not have permission.")
+
+    age = 25
+
+# Equality
+print(age == 25)  # True - equals
+print(age != 30)  # True - not equals
+
+# Greater/Less than
+print(age > 20)  # True - greater than
+print(age < 30)  # True - less than
+print(age >= 25)  # True - greater or equal
+print(age <= 25)  # True - less or equal
