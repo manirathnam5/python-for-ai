@@ -21,23 +21,39 @@ area = "Marathahalli"
 print(f"I live in {area} and my flat number is {flat}.")
 
 
-raining = True  # Example value, replace with actual logic to determine if it's raining
+def greet(name):
+    if name:
+        print(f"Hello, {name}!")
+    else:
+        print("Hello, stranger!")
 
-if raining:
-    print("It's raining, don't forget to carry an umbrella!")
+
+greet("Manish")
+
+
+def first_function():
+    pass
+
+
+def second_function():
+    pass
+
+
+long_string = "This is a very long string that spans multiple lines for readability"
+
+print(long_string)
+
+shirt_price = 3000
+print(shirt_price)
+
+pant_price = 2000
+print(f"Pant price: {pant_price}")
+
+fridge_price = 15000
+print(f"Fridge price : {fridge_price}")
+
+isPremium_user = True
+if isPremium_user:
+    print("User is a premium user.")
 else:
-    print("Wear Sunglasses, enjoy your day!")
-
-temperature = 32  # Example value, replace with actual logic to get the temperature
-if temperature > 30:
-    print("It's hot!")
-    print("Turn on AC")
-
-score =   # Example value, replace with actual logic to get the score
-if score >= 90:
-    print("Excellent!")
-    if score >= 75:
-        print("Good job!")
-
-
-    print("Hello World)          
+    print("User is not a premium user.")
