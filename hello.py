@@ -159,3 +159,10 @@ print(age > 20)  # True - greater than
 print(age < 30)  # True - less than
 print(age >= 25)  # True - greater or equal
 print(age <= 25)  # True - less or equal
+
+
+# Operators
+print(10 + 5)
+print(20 - 45)
+print(10 * 4)
+print(20 / 5)
