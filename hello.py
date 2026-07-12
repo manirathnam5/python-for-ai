@@ -166,3 +166,6 @@ print(10 + 5)
 print(20 - 45)
 print(10 * 4)
 print(20 / 5)
+
+print(10 // 3)  # Floor division
+print(10 % 3)  # Modulus
