@@ -12,9 +12,6 @@ data = response.json()
 
 print(data)
 
-favorite_food = "Hyderabadi Biryani"
-city = "Bangalore"
-print(f"My favorite food is {favorite_food} and I live in {city}.")
 
 flat = 504
 area = "Marathahalli"
