@@ -1,5 +1,5 @@
 import requests
-import pandas as pd
+
 from datetime import datetime, timedelta
 
 # Calculate dates
@@ -17,9 +17,9 @@ response = requests.get(url)
 data = response.json()
 print(data)
 
+#---------------------------------------------------------------------
 
-
-
+import pandas as pd
 # Extract the daily data
 daily_data = data['daily']
 
@@ -34,3 +34,26 @@ df = pd.DataFrame({
 df['date'] = pd.to_datetime(df['date'])
 
 print(df)
+
+
+
+import matplotlib.pyplot as plt
+
+# Create the plot
+plt.figure(figsize=(10, 6))
+plt.plot(df['date'], df['max_temp'], marker='o', label='Max Temp')
+plt.plot(df['date'], df['min_temp'], marker='o', label='Min Temp')
+
+# Add labels and title
+plt.xlabel('Date')
+plt.ylabel('Temperature (°C)')
+plt.title('Paris Weather - Past 7 Days')
+plt.legend()
+
+# Rotate x-axis labels for readability
+plt.xticks(rotation=45)
+plt.tight_layout()
+
+# Save the plot
+plt.savefig('weather_chart.png')
+plt.show()

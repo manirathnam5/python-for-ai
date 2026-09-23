@@ -25,7 +25,10 @@ def greet(name):
         print("Hello, stranger!")
 
 
+print("HELLOWORLD")
 greet("Manish")
+
+print
 
 
 def first_function():
@@ -86,6 +89,8 @@ print(type("Hello"))
 
 print(type(True))
 
+
+# fdslkfjdsf
 
 pi = 3.14159
 price = 19.99
